@@ -1,22 +1,46 @@
-.App {
+body {
+  font-family: "McLaren", cursive;
   text-align: center;
+  line-height: 1;
+  padding: 1;
 }
 
-.App-logo {
-  height: 40vmin;
+li {
+  list-style: none;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+.weather-html {
+  max-width: 700px;
+  margin: 30px auto;
+  border: 3px linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+  border-radius: 12px;
+  color: rgb(92, 90, 90);
+  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.temperature {
+  font-size: 60px;
+}
+.unit {
+  position: relative;
+  font-size: 16px;
+  top: -28px;
+}
+.details {
+  position: relative;
+  top: 38px;
+}
+.col-small-2 {
+  position: relative;
+  right: -60px;
 }
 
-.App-link {
-  color: #09d3ac;
+#current-Loc {
+  position: relative;
+  right: 39px;
+}
+#forecast {
+  font-size: 2px;
 }
