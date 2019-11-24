@@ -1,4 +1,4 @@
-body {
+.App {
   font-family: "McLaren", cursive;
   text-align: center;
   line-height: 1;
@@ -11,7 +11,7 @@ li {
   margin: 0;
   padding: 0;
 }
-.weather-html {
+.Weather-html {
   max-width: 700px;
   margin: 30px auto;
   border: 3px linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
@@ -20,15 +20,15 @@ li {
   background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
 }
 
-.temperature {
+.Temperature {
   font-size: 60px;
 }
-.unit {
+.Unit {
   position: relative;
   font-size: 16px;
   top: -28px;
 }
-.details {
+.Details {
   position: relative;
   top: 38px;
 }
