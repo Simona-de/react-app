@@ -12,7 +12,7 @@ export default function App() {
       <br />
       <div className="row weather-forecast" id="forecast"></div>
       <small>
-        <a href="https://github.com/Simona-de/react-appnp" target="blank">
+        <a href="https://github.com/Simona-de/react-app" target="blank">
           {" "}
           Oper source code
         </a>{" "}
