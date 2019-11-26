@@ -52,13 +52,13 @@ export default function Temperature(props) {
           />
           <input type="submit" value="search" />
         </form>
-        <button id="current-Loc">current location</button>
+
         <div className="Row">
           <div className="Col-6">
             <ul>
               <li>
                 <img
-                  src="  https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png "
+                  src="  https://openweathermap.org/img/wn/{weather.icon}@2x.png "
                   alt=""
                   id="icon"
                 />
