@@ -21,21 +21,6 @@ export default function Temperature(props) {
     return (
       <div>
         <span className="Temperature" id="temp">
-          {Math.round(props.celsius)}{" "}
-        </span>
-        <span className="Unit">
-          {" "}
-          <a href="*">°C</a> |{" "}
-          <a href="*" onClick={showFahrenheit}>
-            °F
-          </a>
-        </span>
-      </div>
-    );
-  } else {
-    return (
-      <div>
-        <span className="Temperature" id="temp">
           {Math.round(fahrenheit())}{" "}
         </span>
         <span className="Unit">
@@ -44,6 +29,21 @@ export default function Temperature(props) {
             °C
           </a>{" "}
           | <a id="fahrenheit">°F</a>
+        </span>
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <span className="Temperature" id="temp">
+          {Math.round(props.celsius)}{" "}
+        </span>
+        <span className="Unit">
+          {" "}
+          <a href="*">°C</a> |{" "}
+          <a href="*" onClick={showFahrenheit}>
+            °F
+          </a>
         </span>
       </div>
     );
