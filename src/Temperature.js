@@ -37,7 +37,7 @@ export default function Temperature(props) {
 
   if (weather.ready) {
     return (
-      <div className="Weather-html">
+      <div>
         <h1 id="city">{weather.city}</h1>
         <p id="date">
           <CorrectedDate date={weather.date} />
@@ -57,11 +57,7 @@ export default function Temperature(props) {
           <div className="Col-6">
             <ul className="tempIcon">
               <li>
-                <img
-                  src="  https://openweathermap.org/img/wn/{weather.icon}@2x.png "
-                  alt=""
-                  id="icon"
-                />
+                <img src="  * " alt="" id="icon" />
                 <span id="sky">{weather.description}</span>
               </li>
               <li>
