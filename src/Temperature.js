@@ -55,7 +55,7 @@ export default function Temperature(props) {
 
         <div className="Row">
           <div className="Col-6">
-            <ul>
+            <ul className="tempIcon">
               <li>
                 <img
                   src="  https://openweathermap.org/img/wn/{weather.icon}@2x.png "

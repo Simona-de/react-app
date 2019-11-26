@@ -4,15 +4,11 @@ li {
   margin: 0;
   padding: 0;
 }
-.Weather-html {
-  max-width: 700px;
-  margin: 30px auto;
-  border: 3px linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
-  border-radius: 12px;
-  color: rgb(92, 90, 90);
-  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+.tempIcon {
+  position: relative;
+  top: 38px;
+  right: 150px;
 }
-
 .Temperature {
   font-size: 60px;
 }
@@ -23,7 +19,8 @@ li {
 }
 .Details {
   position: relative;
-  top: 38px;
+  bottom: 38px;
+  left: 150px;
 }
 .col-small-2 {
   position: relative;
