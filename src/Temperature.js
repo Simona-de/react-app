@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./TemperatureC.css";
 import CorrectedDate from "./CorrectedDate";
-
+import Celsius from "./Celsius";
 import axios from "axios";
 
 export default function Temperature(props) {
@@ -38,7 +38,7 @@ export default function Temperature(props) {
   if (weather.ready) {
     return (
       <div className="Weather-html">
-        <h1 id="city">{props.city}</h1>
+        <h1 id="city">{weather.city}</h1>
         <p id="date">
           <CorrectedDate date={weather.date} />
         </p>
@@ -65,13 +65,7 @@ export default function Temperature(props) {
                 <span id="sky">{weather.description}</span>
               </li>
               <li>
-                <span className="Temperature" id="temp">
-                  {weather.temperature}{" "}
-                </span>
-                <span className="Unit">
-                  {" "}
-                  <a id="celsius">°C</a> | <a id="fahrenheit">°F</a>
-                </span>
+                <Celsius celsius={weather.temperature} />
               </li>
             </ul>
           </div>
