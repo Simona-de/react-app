@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./TemperatureC.css";
 import CorrectedDate from "./CorrectedDate";
 import Celsius from "./Celsius";
+import Icon from "./Icon";
 import axios from "axios";
 
 export default function Temperature(props) {
@@ -53,11 +54,11 @@ export default function Temperature(props) {
           <input type="submit" value="search" />
         </form>
 
-        <div className="Row">
-          <div className="Col-6">
+        <div className="row">
+          <div className="col-6">
             <ul className="tempIcon">
               <li>
-                <img src="  * " alt="" id="icon" />
+                <Icon code={weather.icon} />
                 <span id="sky">{weather.description}</span>
               </li>
               <li>
@@ -65,7 +66,7 @@ export default function Temperature(props) {
               </li>
             </ul>
           </div>
-          <div className="Col-6">
+          <div className="col-6">
             <ul className="Details">
               <li>
                 Humidity <span id="humidity">{weather.humidity}</span>%
